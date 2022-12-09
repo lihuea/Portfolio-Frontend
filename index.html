@@ -1,2 +1,203 @@
-<h1> Mi Portfolio </h1>
-<p> modificación en el repositorio remoto </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Mi Portfolio</title>
+    <meta name="description" content="Roughly 155 characters">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/dacd2d0049.js" crossorigin="anonymous"></script>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="./imagenes/argbarra.png" alt="Logo Argentina Programa" class="w-50">
+            </a>
+            <ul class="list-group list-group-horizontal">
+                <li class="list-group-item"><a href="https://www.instagram.com/lihue_alvarez/" target="_blank"><i class="fa-brands fa-instagram fa-2x text-white"></i></a></li>
+                <li class="list-group-item"><a href="https://github.com/lihuea" target="_blank"><i class="fa-brands fa-github fa-2x text-white"></i></a></li>
+                <li class="list-group-item"> 
+                    <!-- Button trigger modal -->
+                    <!--boton que abre el login-->
+                        <a href="login.html"><i class="fa-solid fa-user-lock fa-2x text-white"></a></i>
+                    </li>
+            </ul>
+        </div>
+      </nav>
+
+
+  
+  <!-- Login -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesión</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">Nunca compartiremos tu email con nadie.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Ingresar</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="card mat-card" id= "first-card"> 
+        <div id="profile-background"><img src="./imagenes/20210603_184739.jpg" alt="Techos y nubes rosas" class="img-fluid"> </div>
+        <div id="info" style="padding: 16px">
+            <div id="info-img">
+                <img class="profile-image" src="./imagenes/Picsart_22-06-06_09-03-52-696.jpg">
+                <div class="btn-edit"><a href="#" class="btn-right"><i class= "fa fa-pen"></i></a></div>
+            </div>
+            <div id="info-data">
+                <div>
+                   <h1> Lihué Alvarez</h1> 
+                   <div id="info-contact">
+                    <span> Mendoza (Argentina) </span>
+                    <span><a href="#"> Información de contacto</a></span>
+                   </div>
+                </div>
+            <ul id="info-details">
+                <li><a href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa" target="_blank">
+                    <img src="./imagenes/argplogo.png"> </img>
+                    <h2>Argentina Programa</h2>
+                </a></li>
+                <li><a href="https://21.edu.ar/" target="_blank">
+                    <img src="./imagenes/siglo21.0.jpg">
+                    <h2> Universidad del Siglo 21</h2>
+                </a></li>
+            </ul>
+            </div>
+
+            <div id="info-action">
+                <button class="btn btn-primary" type="button">
+                    Tengo interés en </button>
+                <button class="btn btn-light" type="button"> Añadir Sección</button>
+                <button class="btn btn-light" type="button"> Más</button>
+            </div>
+        </div>
+        <div class="card mat-card" id="1">
+            <div class="card-titles">
+                <h2>Información</h2>
+                <div class="btn-edit btn-right"> <i class="fa fa-pen"></i></div>
+            </div>
+            <div>
+                <p id="text-acercade"> Desarroladora Full Stack Jr. Actualemente estudiante de Marketing y Publicidad digital en la Universidad del Siglo 21.</p>
+            </div>
+            <div>
+                <input id="edit-acercade" type="text" oninput="escribir_acercade(this.value)" style="display:none">
+            </div>
+        </div>
+        <div class="card mat-card" id="second-card">
+            <div class="card-titles">
+                <h2>Experiencia </h2>
+            </div>
+            <div>
+                <p id="text-experiencia"> No posee </p>
+            </div>
+        </div>
+        <div class="card mat-card" id="third-card">
+            <div class="card-titles">
+                <h2> Estudios</h2>
+            </div>
+            <ul id="estudios">
+                <li>
+                    <img src="./imagenes/siglo21.0.jpg">
+                    <h4>Universidad del Siglo 21 </h4>
+                    <p>Tecnicatura en Marketing y publicidad digital </p>
+                    <p>2021 - Actualidad </p> 
+                </li>
+                <li>
+                    <img src="./imagenes/cpa.jpg">
+                    <h4>Centro Polivalente de Arte</h4>
+                    <p>Escuela Secundaria - Bachiller en Artes Visuales con especialidad en Producción Cerámica</p>
+                    <p>2015 - 2019 </p>
+                </li>
+            </ul>
+            <h4> Cursos </h4>
+            <ul id="cursos">
+                <li>
+                    <img src="./imagenes/argp.png" alt="Argentina Programa">
+                    <h4> Argentina Programa #SeProgramar</h4>
+                    <p> Curso de Lenguaje Pseudocodigo-Javascript-Ruby (Primera Etapa)</p>
+                    <p> 2022 </p>
+                </li>
+                <li>
+                    <img src="./imagenes/argp.png" alt="Argentina Programa">
+                    <h4> Argentina Programa #YoProgramo</h4>
+                    <p> Curso Fullstack Web Developer Jr (Segunda Etapa)</p>
+                    <p>Actualidad</p>
+                </li>
+            </ul>
+        </div>
+        <div class="card mat-card" id="forth-card">
+            <h2>Hard & Soft Skills</h2>
+            <h6>JavaScript </h6>
+            <div class="progress mb-2">
+                <div class="progress-bar" role="progressbar" aria-label="JavaScript" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+              </div>
+              <h6>HTML</h6>
+              <div class="progress mb-2">
+                <div class="progress-bar" role="progressbar" aria-label="html" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+              </div>
+              <h6>CSS con Bootstrap</h6>
+              <div class="progress mb-2">
+                <div class="progress-bar" role="progressbar" aria-label="CssBootstrap" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+              </div>
+              <h6>Angular</h6>
+              <div class="progress mb-4">
+                <div class="progress-bar" role="progressbar" aria-label="Angular" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+              </div>
+              <h6> Trabajo en equipo </h6>
+              <div class="progress mb-2">
+                <div class="progress-bar progress-bar-striped" role="progressbar" aria-label="Trabajo en equipo" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+              </div>
+              <h6>Proactividad</h6>
+              <div class="progress mb-2">
+                <div class="progress-bar progress-bar-striped" role="progressbar" aria-label="Proactividad" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+              </div>
+              <h6> Comunicación oral y escrita </h6>
+              <div class="progress mb-2">
+                <div class="progress-bar" role="progressbar" aria-label="Comunicación" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+              </div>
+              <h6>Resolución de Problemas</h6>
+              <div class="progress mb-2">
+                <div class="progress-bar" role="progressbar" aria-label="Resolución de Problemas" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+              </div>
+        </div>
+        <div class="card mat-card" id="fifth-card">
+            <div class="card-titles">
+                <h2>Proyectos </h2>
+            </div>
+            <div>
+                <p id="text-experiencia"> No tiene </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="ecma_brw.js"></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+       
+</body>
+</html>

@@ -1,0 +1,205 @@
+.bg-black{
+    background-color: black;
+}
+
+.list-group{
+    --bs-list-group-bg: transparent;
+}
+
+.fa-brands.fa-instagram.fa-2x:hover{
+    --bs-text-opacity: 1;
+    color: #740974 !important;
+}
+
+.fa-brands.fa-github.fa-2x:hover{
+    --bs-text-opacity: 1;
+    color:green !important;
+}
+
+.fa-solid.fa-user-lock.fa-2x:hover{
+    --bs-text-opacity: 1;
+    color:#127e7e !important;
+}
+.mat-card {
+    border-radius: 32px;
+    margin: 10px 10px;
+    padding: 20px;
+    border-color: black;
+}
+.mat-card#first-card {
+    padding: 0;
+}
+div#profile-background {
+    display: contents;
+    z-index: 1;
+}
+div#profile-background img{
+    display: flex;
+    width: 100%;
+    border-radius: 32px 32px 0 0;
+}
+.profile-image {
+    border-radius: 60%;
+    width: 170px;
+    height: 170px;
+    margin-top: -110px;
+    z-index: 1;
+}
+div#info-actions {
+    display: flex;
+}
+
+div#info-contact span{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+div#info-contact span a {
+    color:blue;
+    touch-action: manipulation;
+    text-decoration: none;
+}
+
+div#info-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+div#info-data h1{
+    font-size: 1.8rem;
+    display: inline;
+    font-weight: 500;
+    line-height: 1.25;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+div#info-data ul#info-details {
+    width: 232px;
+    list-style: none;
+    flex-shrink: 0;
+}
+
+div#info-data ul#info-details li a{
+    color: black;
+    display: flex;
+    text-decoration: none;
+}
+
+div#info-data ul#info-details li a h2{
+    font-size: 1rem;
+    font-weight: 500;
+    align-self: center;
+    vertical-align: baseline;
+}
+
+div#info-data ul#info-details li a img {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+ul.items-list {
+    list-style: none inside;
+}
+
+ul.items-list {
+    display: flex;
+    margin: 10px 0;
+}
+
+ul.items-list li div.data-container {
+    flex-grow: 1;
+}
+
+ul.items-list li div.data-container a {
+    display: flex;
+    color: black;
+}
+
+div#third-card ul#estudios {
+    list-style: none;
+}
+
+div#third-card ul#estudios li img{
+    display: flex;
+    width: 10%;
+    border-radius: 80px 80px ;
+    float: left;
+    margin-left: -35px;
+    margin-top: 20px;
+}
+
+div#third-card ul#estudios h4{
+    padding: 20px;
+    margin-left: 90px;
+}
+
+div#third-card ul#estudios li p{
+    padding: 10px;
+    font-size: 1rem;
+    align-self: center;
+    vertical-align: baseline;
+    margin-left: 100px;
+    line-height: 1px;
+
+}
+
+div#third-card ul#cursos {
+    list-style: none;
+}
+
+div#third-card ul#cursos li img {
+    display: flex;
+    width: 10%;
+    border-radius: 80px 80px ;
+    float: left;
+    margin-left: -35px;
+    margin-top: 20px;
+}
+
+div#third-card ul#cursos h4{
+    padding: 20px;
+    margin-left: 90px;
+}
+
+div#third-card ul#cursos li p{
+    padding: 10px;
+    font-size: 1rem;
+    align-self: center;
+    vertical-align: baseline;
+    margin-left: 100px;
+    line-height: 1px;
+}
+
+.formulario-login {
+    margin-top: 12%;
+}
+
+.formulario-registro{
+    margin-top: 8%;
+}
+
+.admin{
+    font-size: 1.10rem;
+
+}
+.perfil{
+    border-radius: 60%;
+    width: 170px;
+    height: 170px;
+    margin-top: -25px;
+    z-index: 1;
+}
+
+.fa-solid.fa-user.fa-2x:hover{
+    --bs-text-opacity: 1;
+    color:#127e7e !important;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.btn.ingresar{
+    margin-left: -40%;
+}
